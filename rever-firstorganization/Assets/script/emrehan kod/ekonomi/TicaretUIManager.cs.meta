@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 50148270786fa1746adee6da2595dae3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ticaretPaneli: {fileID: 4193345064860669070, guid: af58f1c273c8a4b43b2cdc4882a338fc, type: 3}
+  - satisListesiIcerik: {instanceID: 0}
+  - ticaretSlotPrefab: {fileID: 3626185631926333179, guid: 3e2887e3e66a0fc40b139965727e1448, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
