@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class CropController : MonoBehaviour
+public class CropController : MonoBehaviour, IIletisim
 {
     // Durumları tanımlıyoruz (Senin istediğin aşamalar)
     public enum TarlaDurumu { HamToprak, SurulmusToprak, Ekili, Olgun }
@@ -25,20 +25,17 @@ public class CropController : MonoBehaviour
     void Start()
     {
         // Envanter yöneticisini bul
-        inventoryManager = InventoryManager.instance;
-        if (inventoryManager == null)
-        {
-            GameObject manager = GameObject.Find("GAME_MANAGER");
-            if (manager != null) inventoryManager = manager.GetComponent<InventoryManager>();
-        }
+        //inventoryManager = InventoryManager.instance;
+        //if (inventoryManager == null)
+        //{
+        //    GameObject manager = GameObject.Find("GAME_MANAGER");
+        //    if (manager != null) inventoryManager = manager.GetComponent<InventoryManager>();
+        //}
 
         // Oyuna başladığımızda görüntüleri duruma göre ayarla
         GorumunuGuncelle();
     }
-
-    // --- ETKİLEŞİM (F TUŞU) ---
-    // TwoKeyInteractionManager bu fonksiyonu çağıracak
-    public void OnInteract()
+    public void IletisimeGec(GameObject etkilesen)
     {
         switch (suankiDurum)
         {
@@ -67,6 +64,37 @@ public class CropController : MonoBehaviour
                 break;
         }
     }
+    // --- ETKİLEŞİM (F TUŞU) ---
+    // TwoKeyInteractionManager bu fonksiyonu çağıracak
+    //public void OnInteract()
+    //{
+    //    //switch (suankiDurum)
+    //    //{
+    //    //    case TarlaDurumu.HamToprak:
+    //    //        // 1. AŞAMA: Toprağı Sür
+    //    //        suankiDurum = TarlaDurumu.SurulmusToprak;
+    //    //        Debug.Log("🚜 Toprak sürüldü!");
+    //    //        GorumunuGuncelle();
+    //    //        break;
+
+    //    //    case TarlaDurumu.SurulmusToprak:
+    //    //        // 2. AŞAMA: Tohum Ek
+    //    //        suankiDurum = TarlaDurumu.Ekili;
+    //    //        Debug.Log("🌱 Tohum ekildi/Fide dikildi!");
+    //    //        GorumunuGuncelle();
+    //    //        break;
+
+    //    //    case TarlaDurumu.Ekili:
+    //    //        // Henüz büyümedi, kullanıcıya bilgi ver
+    //    //        Debug.Log("⏳ Bitki henüz büyümedi. Uyu veya bekle.");
+    //    //        break;
+
+    //    //    case TarlaDurumu.Olgun:
+    //    //        // 4. AŞAMA: Hasat Et
+    //    //        HasatEt();
+    //    //        break;
+    //    //}
+    //}
 
     // --- BÜYÜME (GECE GÜNDÜZ SİSTEMİ ÇAĞIRIR) ---
     public void Grow()

@@ -46,7 +46,7 @@ public class TwoKeyInteractionManager : MonoBehaviour
             {
                 if (Input.GetKeyDown(lootKey))
                 {
-                    crop.OnInteract(); // Ekmek veya toplamak için
+                   // crop.OnInteract(); // Ekmek veya toplamak için
                     Debug.Log("Tarlayla etkileþime geçildi!");
                 }
             }

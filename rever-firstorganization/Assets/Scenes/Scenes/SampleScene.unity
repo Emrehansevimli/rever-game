@@ -812,6 +812,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5133527735546962725, guid: 1484486a9905ec04aadb5fbea57bae19, type: 3}
+      propertyPath: suankiDurum
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -876,6 +880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1020514024}
   - component: {fileID: 1020514023}
+  - component: {fileID: 1020514025}
   m_Layer: 0
   m_Name: DayNightCycle
   m_TagString: Untagged
@@ -890,7 +895,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020514022}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 758b31b06b2e31b42b7910c3b14c24fc, type: 3}
   m_Name: 
@@ -912,6 +917,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1020514025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020514022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7b056a007259ac41a69cc1816d4ecc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GunDongusuYonetici
+  gunes: {fileID: 410087040}
+  gunSuresiDakikaCinsinden: 1
+  mevcutZaman: 0.25
+  gunduzRengi: {r: 0.53, g: 0.75, b: 1, a: 1}
+  geceRengi: {r: 0.05, g: 0.1, b: 0.2, a: 1}
 --- !u!1 &1255564624
 GameObject:
   m_ObjectHideFlags: 0
