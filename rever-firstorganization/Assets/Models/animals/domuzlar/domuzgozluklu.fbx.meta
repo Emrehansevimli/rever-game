@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: ba52bd9f1619c33408798d697861f944
+guid: 327313794a558ff45a12e7575df4e12e
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
   externalObjects:
   - first:
-      type: UnityEngine:Material
+      type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: BakedMaterial
-    second: {fileID: 2100000, guid: 6f7340921853d884d8796af7987c8bae, type: 2}
+      name: gozlukludomuzderi
+    second: {fileID: 2800000, guid: c1df93b9b866b0c449fe0a6f5b570c3a, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

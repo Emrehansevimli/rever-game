@@ -1,14 +1,19 @@
 fileFormatVersion: 2
-guid: ba52bd9f1619c33408798d697861f944
+guid: cca1b9a355f4d854fbf4c7ef62cd4655
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
   externalObjects:
   - first:
-      type: UnityEngine:Material
+      type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: BakedMaterial
-    second: {fileID: 2100000, guid: 6f7340921853d884d8796af7987c8bae, type: 2}
+      name: pig3_accessories
+    second: {fileID: 2800000, guid: 5b4dde01888f8dc408428c87eab2c69e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pig3_skin
+    second: {fileID: 2800000, guid: 54923af358a0758438220a2eec5aae16, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
