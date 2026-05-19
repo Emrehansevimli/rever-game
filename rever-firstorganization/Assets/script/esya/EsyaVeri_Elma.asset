@@ -15,8 +15,11 @@ MonoBehaviour:
   esyaTipi: 1
   gorunurAd: ELMA
   aciklama: "+15 Sagl\u0131k verir\n"
-  ikon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  maksIstifBoyutu: 99
+  ikon: {fileID: 21300000, guid: 87296770e6e92fd46b9a4b35624d4c09, type: 3}
+  maxIstifBoyutu: 99
   canEtkisi: 15
   kullanilabilir: 1
   esyaModelPrefab: {fileID: 9126224730366779859, guid: 0922e426dddfab64f8bc7616d57016f7, type: 3}
+  satinAlmaFiyati: 10
+  satmaFiyati: 8
+  satilabilirMi: 1

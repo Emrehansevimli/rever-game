@@ -7,6 +7,10 @@ public class KarakterVerisiSO : ScriptableObject
     public string karakterAdi = "Ýsimsiz Kahraman";
     public string aciklama = "Dengeli bir karakter.";
 
+    [Header("Görünüm (3D Model)")]
+    [Tooltip("Karakterin sahnede görünecek olan 3D Prefab'ý")]
+    public GameObject karakterModeliPrefab; // YENÝ EKLENEN KISIM
+
     [Header("Hareket Özellikleri")]
     public float yurumeHizi = 6.0f;
     public float kosmaHizi = 10.0f;

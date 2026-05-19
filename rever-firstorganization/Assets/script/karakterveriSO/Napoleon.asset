@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KarakterVerisiSO
   karakterAdi: Napoleon
   aciklama: Dengeli bir karakter.
+  karakterModeliPrefab: {fileID: 919132149155446097, guid: 7080e4c8682849a4da76c23016b4e737, type: 3}
   yurumeHizi: 6
   kosmaHizi: 10
   ziplamaKuvveti: 8

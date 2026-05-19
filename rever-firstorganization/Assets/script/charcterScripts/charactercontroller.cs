@@ -16,6 +16,10 @@ public class charactercontroller : MonoBehaviour
     public float maxBakýþAçýsý = 90f;
     public float minBakýþAçýsý = -90f;
 
+    [Header("Görünüm Ayarlarý")]
+    public Transform modelTutucu; // 3D modelin içine doðacaðý boþ obje
+    private GameObject _aktifModel; // Þu an sahnede olan model
+
     // YENÝ EKLENEN KAMERA DEÐÝÞKENLERÝ
     [Tooltip("Kameranýn FPS modundaki konumu (Karakterin göz hizasý)")]
     public Vector3 firstPersonPozisyon = new Vector3(0f, 0.7f, 0.2f);
@@ -68,7 +72,19 @@ public class charactercontroller : MonoBehaviour
             {
                 _karakterDurum.KarakterOzellikleriniAyarla(karakterVerisi.maxCan, karakterVerisi.stamina);
             }
+            if (karakterVerisi.karakterModeliPrefab != null && modelTutucu != null)
+            {
+                // Seçili karakterin 3D modelini 'modelTutucu' objesinin içine yarat
+                _aktifModel = Instantiate(karakterVerisi.karakterModeliPrefab, modelTutucu);
 
+                // Modelin pozisyonunu ve rotasyonunu sýfýrla ki yamuk durmasýn
+                _aktifModel.transform.localPosition = Vector3.zero;
+                _aktifModel.transform.localRotation = Quaternion.identity;
+            }
+            else
+            {
+                Debug.LogWarning("Karakter modeli veya Model Tutucu atanmamýþ!");
+            }
             Debug.Log($"Seçilen Karakter: {karakterVerisi.karakterAdi} yüklendi.");
         }
     }
